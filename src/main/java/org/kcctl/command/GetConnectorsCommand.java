@@ -125,7 +125,7 @@ public class GetConnectorsCommand implements Runnable {
                 sb.append(", ");
             }
 
-            sb.append(taskState.id()).append(": ").append(taskState.state());
+            sb.append(taskState.id()).append(": ").append(taskState.state()).append(" ").append(taskState.worker_id());
         }
 
         return sb.toString();
